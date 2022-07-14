@@ -1,0 +1,32 @@
+body {
+  font-family: sans-serif;
+}
+
+.core-image-zoom {
+  position: relative;
+  cursor: zoom-in;
+  overflow: hidden;
+}
+
+.core-image-zoom__zoom-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  transform-origin: 0 0;
+  display: none;
+  pointer-events: none;
+}
+.core-image-zoom--active .core-image-zoom__zoom-item {
+  display: block;
+}
+
+.core-image-zoom img {
+  width: 100%;
+}
+
